@@ -12,6 +12,8 @@ brew install --cask cavlu
 open -a Cavlu
 ```
 
+Если Homebrew сообщает `untrusted tap`, один раз выполните `brew trust --cask plexideas/cavlu/cavlu`, затем повторите `brew install --cask cavlu`. Это разрешение только для данного cask, не отключение Gatekeeper.
+
 Разрешите приложению «Универсальный доступ» и «Мониторинг ввода» в системных настройках. Автоисправление по умолчанию выключено.
 
 Пакет Universal, Xcode и Git для запуска не нужны. ZIP загружается из [публичных GitHub Releases](https://github.com/plexideas/cavlu-releases/releases/latest), Homebrew проверяет настоящий SHA-256 архива. Приватные исходники и исследовательский архив не публикуются.
