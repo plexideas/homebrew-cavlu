@@ -1,2 +1,31 @@
-# homebrew-cavlu
-Homebrew tap for Cavlu; public packages pending resource rights review
+# Cavlu Homebrew tap
+
+Homebrew tap для [Cavlu](https://github.com/plexideas/Cavlu), нативного корректора русской и английской раскладок для macOS 14+ на Apple Silicon и Intel.
+
+## Статус
+
+**Публичного релиза и cask пока нет.** Публикация заблокирована до проверки прав на встроенные ресурсы и подготовки подписанного, нотарифицированного пакета. Этот приватный репозиторий — подготовленная инфраструктура, а не доступный установщик.
+
+Не добавляйте cask с `sha256 :no_check`, локальными ZIP или отключением Gatekeeper. `Casks/cavlu.rb` будет создан скриптом выпуска основного проекта из настоящего релизного архива.
+
+## Установка после первого публичного релиза
+
+Когда основной репозиторий и tap станут публичными и появится cask:
+
+```sh
+brew tap plexideas/cavlu
+brew install --cask plexideas/cavlu/cavlu
+open -a Cavlu
+```
+
+Разрешите приложению «Универсальный доступ» и «Мониторинг ввода» в системных настройках. Автоисправление по умолчанию выключено.
+
+```sh
+brew update
+brew upgrade --cask plexideas/cavlu/cavlu
+brew uninstall --cask plexideas/cavlu/cavlu
+```
+
+Обычное удаление сохраняет настройки. `brew uninstall --zap --cask plexideas/cavlu/cavlu` удаляет также пользовательские правила и обученные исключения из `~/Library/Application Support/project-23`. Перед удалением завершите приложение и отключите запуск при входе.
+
+Инструкции для владельца: [выпуск и Homebrew](https://github.com/plexideas/Cavlu/blob/main/docs/DISTRIBUTION.md). Этот tap не является официальным `homebrew/cask`.
