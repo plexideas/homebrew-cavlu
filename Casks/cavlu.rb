@@ -1,8 +1,8 @@
 cask "cavlu" do
-  version "1.0.7,28"
-  sha256 "80423e2e62fd1be0477fc4d45d6a7d00a778695c3c3197917c596180b09ef9e8"
+  version "1.0.8,29"
+  sha256 "dccb309c2836256c9b40d562297893796eb8d3ab3592dc0789ec9388d3e67e57"
 
-  url "https://github.com/plexideas/cavlu-releases/releases/download/v1.0.7-build.28/project-23-1.0.7.zip"
+  url "https://github.com/plexideas/cavlu-releases/releases/download/v1.0.8-build.29/Cavlu-1.0.8.zip"
   name "Cavlu"
   desc "Local Russian and English keyboard layout correction"
   homepage "https://github.com/plexideas/cavlu-releases"
@@ -10,7 +10,7 @@ cask "cavlu" do
   auto_updates true
   depends_on macos: :sonoma
 
-  app "project-23.app", target: "Cavlu.app"
+  app "Cavlu.app"
 
   zap trash: "~/Library/Application Support/project-23"
 
