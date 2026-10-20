@@ -1,8 +1,8 @@
 cask "cavlu" do
-  version "1.0.11,33"
-  sha256 "95f8c844061407a30c0447cba9d1c8d72276b43154a25397c6a9ac66ea600931"
+  version "1.0.12,34"
+  sha256 "373ef7a4ada5cae05034c87dbe27c0efbae4e08e5eee0ea91923d869de32f307"
 
-  url "https://github.com/plexideas/cavlu-releases/releases/download/v1.0.11-build.33/Cavlu-1.0.11.zip"
+  url "https://github.com/plexideas/cavlu-releases/releases/download/v1.0.12-build.34/Cavlu-1.0.12.zip"
   name "Cavlu"
   desc "Local Russian and English keyboard layout correction"
   homepage "https://github.com/plexideas/cavlu-releases"
